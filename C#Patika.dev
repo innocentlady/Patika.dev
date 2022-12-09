@@ -1,0 +1,43 @@
+using System;
+
+namespace degiskenlerveveritipleri
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // farklı veri türlerinde değişkenler tanımlama ve console'a yazdırma;
+
+            string str1 = "apple";
+            Console.WriteLine(str1);
+
+            int int1 = 10;
+            Console.WriteLine(int1);
+
+            decimal dcml1 = 10.2M;
+            Console.WriteLine(dcml1);
+
+            float flt1 = 10.2F;
+            Console.WriteLine(flt1);
+
+            bool boolean1 = true;
+            Console.WriteLine(boolean1);
+
+            DateTime dt1 = DateTime.Now;
+            Console.WriteLine(dt1);
+
+            // değişken dönüşümleri;
+
+            int sayi1 = 10;
+            string metin1 = "2";
+
+            string yenideger = metin1 + sayi1.ToString();
+            Console.WriteLine(yenideger);
+
+            int yenisonuc = sayi1 + Convert.ToInt32(metin1);
+            Console.WriteLine(yenisonuc);
+
+
+        }
+    }
+}
