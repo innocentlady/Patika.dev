@@ -1,0 +1,76 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Implict Conversion
+            byte a = 5;
+            sbyte b = 30;
+            short c = 10;
+
+            int d = a+b+c;
+            Console.WriteLine("d : {0}",d);
+
+            long h = d;
+            Console.WriteLine("h : {0}",h);
+
+            float i = h;
+            Console.WriteLine("i : {0}",i);
+
+            string e = "enes";
+            char f = 'k';
+            object g = e + f + d;
+            Console.WriteLine("g : {0}",g);
+            // Explicit Conversion
+
+            int x = 4;
+            byte y = (byte)x;
+            Console.Writeline("y : {0}",y);
+
+            int z = 100;
+            byte t = (byte)z;
+            Console.WriteLine("t : {0}",t);
+
+            float w = 10.3f;
+            byte v = (byte)w;
+            Console.WriteLine("v : {0}",v);
+
+            // To String
+            int xx = 6;
+            string yy = xx.ToString();
+            Console.Writeline("yy : {0}",yy);
+
+            string zz = t12_5f.ToString();
+            Console.WriteLine("zz : {0}",zz);
+
+            // System.Convert
+            string s1 = "10", s2 = "20";
+            int sayi1, sayi2;
+            int toplam;
+
+            sayi1 = Convert.ToInt32(s1);
+            sayi2 = Convert.ToInt32(s2);
+
+            toplam = sayi1 + sayi2;
+            Console.WriteLine("toplam : {0}",toplam);
+
+            // Parse
+            ParseMethod();
+        }
+        public static void ParseMethod()
+        {
+            string metin1 = "10";
+            string metin2 = "10.25";
+            int rakam;
+            double double1;
+            rakam = Int32.Parse(metin1);
+            double1 = Double.Parse(metin2);
+
+            Console.WriteLine("rakam1 : {0}",rakam1);
+            Console.WriteLine("double1 : {0}",rakam1);
+        }
+    }
+}
